@@ -11,7 +11,7 @@ $node
 
 and rund the basicMonitor:
 ```shell
->node basicMonitor
+>node baseMonitor
 ```
 
 uncomment only one line address and test it against https://trade.sovryn.app/lend activity
