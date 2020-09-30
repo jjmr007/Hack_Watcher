@@ -1,0 +1,34 @@
+This monitor code is just for preliminar testing.
+
+Is intended just to check the latest transaction to Sovryn contract address.
+
+* Search for the last block on RSK test network
+* for-loop-ing all tx's in that block
+* If the "to" field of any tx is the Sovryn contract, just noitify it.
+
+Step 1:
+GitHub Repo
+$ git clone <url://repo> 
+
+Step 2:
+$ npm init
+
+Step 3:
+$ npm install --save-dev web3
+
+Step 4:
+Test a provider:
+$node
+>var Web3 = require('web3')
+>var url = 'https://public-node.testnet.rsk.co'
+(>var url = 'https://testnet.sovryn.app/rpc')
+>var web3 = new Web3(url)
+>var addrs = '0x21Fa1095205a37aDe78F394B3B984ea3f743bc70' //WRBTC
+(>var addrs = '0x6E2fb26a60dA535732F8149b25018C9c0823a715' //SOVRYN)
+>web3.eth.getBalance(addrs, (err, bal) => { blnc = bal })
+>blnc
+>web3.eth.getGasPrice((err, cost) => { precio = cost })
+>precio
+>web3.eth.getBlock('latest', (err, blok) => { bloque = blok })
+
+Step 5:
