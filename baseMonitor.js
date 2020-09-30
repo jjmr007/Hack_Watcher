@@ -30,7 +30,7 @@ class LiveWatch {
 //let lWatch = new LiveWatch('0x6E2fb26a60dA535732F8149b25018C9c0823a715'); // instance of watcher on SOVRYN protocol address
 let lWatch = new LiveWatch('0x543b6777a13E1Fbbf8ABAF08692F0Ad67Ca352FC'); // instance of watcher on SOVRYN LEVERAGING & LENDING DoC protocol address
 //let lWatch = new LiveWatch('0xb01f116199C5ee8E2977B0a9280fe392c4162838'); // instance of watcher on SOVRYN LENDING RBTC protocol address
-//let lWatch = new LiveWatch('0xb01f116199C5ee8E2977B0a9280fe392c4162838'); // instance of watcher on SOVRYN APPROVE LENDING DoC protocol address
+//let lWatch = new LiveWatch('0xCb46C0DdC60d18eFEB0e586c17AF6Ea36452DaE0'); // instance of watcher on DoC ERC20 address
 setInterval(() => { 
 
 	lWatch.lastBlock(); 
