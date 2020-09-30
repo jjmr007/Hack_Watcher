@@ -19,7 +19,7 @@ class LiveWatch {
 				let tx = await this.web3.eth.getTransaction(tHash);
 				if(this.account == tx.to.toLowerCase()) {
 					console.log('Transaction to the test-Sovryn contract found on block: ' + bNumber);
-					consloe.log({address: tx.from, value: tx.value, data: tx.input, at: new Date()});
+					console.log({address: tx.from, value: tx.value, data: tx.input, at: new Date()});
 				}
 				
 			}
@@ -28,10 +28,12 @@ class LiveWatch {
 }
 
 //let lWatch = new LiveWatch('0x6E2fb26a60dA535732F8149b25018C9c0823a715'); // instance of watcher on SOVRYN protocol address
-let lWatch = new LiveWatch('0x543b6777a13E1Fbbf8ABAF08692F0Ad67Ca352FC'); // instance of watcher on SOVRYN LEVERAGING protocol address
-//let lWatch = new LiveWatch('0xb01f116199C5ee8E2977B0a9280fe392c4162838'); // instance of watcher on SOVRYN LENDING protocol address
+let lWatch = new LiveWatch('0x543b6777a13E1Fbbf8ABAF08692F0Ad67Ca352FC'); // instance of watcher on SOVRYN LEVERAGING & LENDING DoC protocol address
+//let lWatch = new LiveWatch('0xb01f116199C5ee8E2977B0a9280fe392c4162838'); // instance of watcher on SOVRYN LENDING RBTC protocol address
+//let lWatch = new LiveWatch('0xb01f116199C5ee8E2977B0a9280fe392c4162838'); // instance of watcher on SOVRYN APPROVE LENDING DoC protocol address
 setInterval(() => { 
 
 	lWatch.lastBlock(); 
 
-}, 1000 * 7 * 3);
+}, 1000 * 7); // intervals longer than 7 seconds increase the risk to loose a block
+// so intensive repetitive loop is not convinient: can make twice or more times the same 'for()' loop & too demanding RPC to the full node
