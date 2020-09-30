@@ -28,7 +28,7 @@ class LiveWatch {
 }
 
 //let lWatch = new LiveWatch('0x6E2fb26a60dA535732F8149b25018C9c0823a715'); // instance of watcher on SOVRYN protocol address
-let lWatch = new LiveWatch('0x6E2fb26a60dA535732F8149b25018C9c0823a715'); // instance of watcher on SOVRYN LEVERAGING protocol address
+let lWatch = new LiveWatch('0x543b6777a13E1Fbbf8ABAF08692F0Ad67Ca352FC'); // instance of watcher on SOVRYN LEVERAGING protocol address
 //let lWatch = new LiveWatch('0xb01f116199C5ee8E2977B0a9280fe392c4162838'); // instance of watcher on SOVRYN LENDING protocol address
 setInterval(() => { 
 
