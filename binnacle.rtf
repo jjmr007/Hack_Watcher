@@ -1,5 +1,5 @@
 {\rtf1\ansi\ansicpg1252\deff0\deflang8202{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern\fprq1 Lucida Console;}{\f2\fmodern\fprq1\fcharset0 Lucida Console;}}
-{\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green191\blue191;\red0\green0\blue255;\red191\green0\blue0;}
+{\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green191\blue191;\red0\green0\blue255;\red191\green0\blue0;\red255\green0\blue0;\red64\green64\blue64;}
 {\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang10\f0\fs22 29-sept-2020\par
 \par
 \f1\fs18\par
@@ -698,5 +698,156 @@ nothing to commit, working tree clean\par
 \cf1 MultiEBD@MultiEBD-PC \cf2 MINGW64 \cf3 ~/Desktop/SOVRYN/03_Early_Hack_Watcher/Hack_Watcher\cf4  (master)\par
 \cf0 $\par
 \f0\fs22 ----------------------------------------------------------------------------------\par
+\par
+\cf7\b\fs28 Monitor2 connection is dropped by the remote peer:\par
+\cf0\b0\fs22\par
+\f1\fs18\par
+\cf1 MultiEBD@MultiEBD-PC \cf2 MINGW64 \cf3 ~/Desktop/SOVRYN/03_Early_Hack_Watcher/Hack_Watcher\cf4  (master)\par
+\cf0 $ node Monitor2\par
+Finding emitted event...\par
+Error: CONNECTION ERROR: The connection got closed with the close code `1006` an\par
+d the following reason string `Connection dropped by remote peer.`\par
+    at Object.ConnectionError (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Wa\par
+tcher\\Hack_Watcher\\node_modules\\web3-core-helpers\\lib\\errors.js:66:23)\par
+    at Object.ConnectionCloseError (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Ha\par
+ck_Watcher\\Hack_Watcher\\node_modules\\web3-core-helpers\\lib\\errors.js:53:25)\par
+    at C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Watcher\\Hack_Watcher\\node_\par
+modules\\web3-core-requestmanager\\lib\\index.js:108:50\par
+    at Map.forEach (<anonymous>)\par
+    at WebsocketProvider.close (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_W\par
+atcher\\Hack_Watcher\\node_modules\\web3-core-requestmanager\\lib\\index.js:107:37)\par
+    at WebsocketProvider.emit (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Wa\par
+tcher\\Hack_Watcher\\node_modules\\eventemitter3\\index.js:181:35)\par
+    at WebsocketProvider._onClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hac\par
+k_Watcher\\Hack_Watcher\\node_modules\\web3-providers-ws\\lib\\index.js:152:10)\par
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (C:\\Users\\MultiEBD\\Desktop\par
+\\SOVRYN\\03_Early_Hack_Watcher\\Hack_Watcher\\node_modules\\yaeti\\lib\\EventTarget.js\par
+:115:12)\par
+    at W3CWebSocket.onClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Watc\par
+her\\Hack_Watcher\\node_modules\\websocket\\lib\\W3CWebSocket.js:228:10)\par
+    at WebSocketConnection.<anonymous> (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Earl\par
+y_Hack_Watcher\\Hack_Watcher\\node_modules\\websocket\\lib\\W3CWebSocket.js:201:17)\par
+\cf8     at WebSocketConnection.emit (events.js:321:20)\par
+\cf0     at WebSocketConnection.handleSocketClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\0\par
+3_Early_Hack_Watcher\\Hack_Watcher\\node_modules\\websocket\\lib\\WebSocketConnection\par
+.js:389:14)\par
+\cf8     at TLSSocket.emit (events.js:333:22)\par
+    at net.js:668:12\par
+    at TCP.done (_tls_wrap.js:558:7)\cf0  \{\par
+  code: \cf3 1006\cf0 ,\par
+  reason: \cf1 'Connection dropped by remote peer.'\par
+\cf0\}\par
+\par
+\cf1 MultiEBD@MultiEBD-PC \cf2 MINGW64 \cf3 ~/Desktop/SOVRYN/03_Early_Hack_Watcher/Hack_Watcher\cf4  (master)\par
+\cf0 $ node Monitor2\par
+Finding emitted event...\par
+Error: CONNECTION ERROR: The connection got closed with the close code `1006` an\par
+d the following reason string `Connection dropped by remote peer.`\par
+    at Object.ConnectionError (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Wa\par
+tcher\\Hack_Watcher\\node_modules\\web3-core-helpers\\lib\\errors.js:66:23)\par
+    at Object.ConnectionCloseError (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Ha\par
+ck_Watcher\\Hack_Watcher\\node_modules\\web3-core-helpers\\lib\\errors.js:53:25)\par
+    at C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Watcher\\Hack_Watcher\\node_\par
+modules\\web3-core-requestmanager\\lib\\index.js:108:50\par
+    at Map.forEach (<anonymous>)\par
+    at WebsocketProvider.close (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_W\par
+atcher\\Hack_Watcher\\node_modules\\web3-core-requestmanager\\lib\\index.js:107:37)\par
+    at WebsocketProvider.emit (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Wa\par
+tcher\\Hack_Watcher\\node_modules\\eventemitter3\\index.js:181:35)\par
+    at WebsocketProvider._onClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hac\par
+k_Watcher\\Hack_Watcher\\node_modules\\web3-providers-ws\\lib\\index.js:152:10)\par
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (C:\\Users\\MultiEBD\\Desktop\par
+\\SOVRYN\\03_Early_Hack_Watcher\\Hack_Watcher\\node_modules\\yaeti\\lib\\EventTarget.js\par
+:115:12)\par
+    at W3CWebSocket.onClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Watc\par
+her\\Hack_Watcher\\node_modules\\websocket\\lib\\W3CWebSocket.js:228:10)\par
+    at WebSocketConnection.<anonymous> (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Earl\par
+y_Hack_Watcher\\Hack_Watcher\\node_modules\\websocket\\lib\\W3CWebSocket.js:201:17)\par
+\cf8     at WebSocketConnection.emit (events.js:321:20)\par
+\cf0     at WebSocketConnection.handleSocketClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\0\par
+3_Early_Hack_Watcher\\Hack_Watcher\\node_modules\\websocket\\lib\\WebSocketConnection\par
+.js:389:14)\par
+\cf8     at TLSSocket.emit (events.js:333:22)\par
+    at net.js:668:12\par
+    at TCP.done (_tls_wrap.js:558:7)\cf0  \{\par
+  code: \cf3 1006\cf0 ,\par
+  reason: \cf1 'Connection dropped by remote peer.'\par
+\cf0\}\par
+\par
+\cf1 MultiEBD@MultiEBD-PC \cf2 MINGW64 \cf3 ~/Desktop/SOVRYN/03_Early_Hack_Watcher/Hack_Watcher\cf4  (master)\par
+\cf0 $ node Monitor2\par
+Finding emitted event...\par
+\{\par
+  transactionIndex: \cf3 0\cf0 ,\par
+  removed: \cf3 false\cf0 ,\par
+  topics: [\par
+    \cf1 '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'\cf0 ,\par
+    \cf1 '0x000000000000000000000000105b74716ad1b054fbec88591a993ec66b1343fa'\cf0 ,\par
+    \cf1 '0x0000000000000000000000008bb38c74b8aaf929201f013c9ecc42b750e562c6'\par
+\cf0   ],\par
+  logIndex: \cf3 0\cf0 ,\par
+  transactionHash: \cf1 '0xb873ee9bc25491053adcb9473aca13e23fe90681f5d2f471f08c302808\par
+8d6352'\cf0 ,\par
+  data: \cf1 '0x0000000000000000000000000000000000000000000000004563918244f40000'\cf0 ,\par
+  blockNumber: \cf3 1233957\cf0 ,\par
+  blockHash: \cf1 '0x7b3dd4f59dc0e484ad81dd29218acbcd9684a14f19441a28fda6a46d512b1eb1\par
+'\cf0 ,\par
+  address: \cf1 '0xCB46c0ddc60D18eFEB0E586C17Af6ea36452Dae0'\cf0 ,\par
+  id: \cf1 'log_e5479b00'\par
+\cf0\}\par
+\{\par
+  transactionIndex: \cf3 0\cf0 ,\par
+  removed: \cf3 false\cf0 ,\par
+  topics: [\par
+    \cf1 '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'\cf0 ,\par
+    \cf1 '0x000000000000000000000000105b74716ad1b054fbec88591a993ec66b1343fa'\cf0 ,\par
+    \cf1 '0x0000000000000000000000008bb38c74b8aaf929201f013c9ecc42b750e562c6'\par
+\cf0   ],\par
+  logIndex: \cf3 0\cf0 ,\par
+  transactionHash: \cf1 '0xb873ee9bc25491053adcb9473aca13e23fe90681f5d2f471f08c302808\par
+8d6352'\cf0 ,\par
+  data: \cf1 '0x0000000000000000000000000000000000000000000000004563918244f40000'\cf0 ,\par
+  blockNumber: \cf3 1233957\cf0 ,\par
+  blockHash: \cf1 '0x3e1980d36f5fb3f9345726fa9631d94fab1ec10d63665e5725f76cb60c168be0\par
+'\cf0 ,\par
+  address: \cf1 '0xCB46c0ddc60D18eFEB0E586C17Af6ea36452Dae0'\cf0 ,\par
+  id: \cf1 'log_296c3a37'\par
+\cf0\}\par
+Error: CONNECTION ERROR: The connection got closed with the close code `1006` an\par
+d the following reason string `Connection dropped by remote peer.`\par
+    at Object.ConnectionError (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Wa\par
+tcher\\Hack_Watcher\\node_modules\\web3-core-helpers\\lib\\errors.js:66:23)\par
+    at Object.ConnectionCloseError (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Ha\par
+ck_Watcher\\Hack_Watcher\\node_modules\\web3-core-helpers\\lib\\errors.js:53:25)\par
+    at C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Watcher\\Hack_Watcher\\node_\par
+modules\\web3-core-requestmanager\\lib\\index.js:108:50\par
+    at Map.forEach (<anonymous>)\par
+    at WebsocketProvider.close (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_W\par
+atcher\\Hack_Watcher\\node_modules\\web3-core-requestmanager\\lib\\index.js:107:37)\par
+    at WebsocketProvider.emit (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Wa\par
+tcher\\Hack_Watcher\\node_modules\\eventemitter3\\index.js:181:35)\par
+    at WebsocketProvider._onClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hac\par
+k_Watcher\\Hack_Watcher\\node_modules\\web3-providers-ws\\lib\\index.js:152:10)\par
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (C:\\Users\\MultiEBD\\Desktop\par
+\\SOVRYN\\03_Early_Hack_Watcher\\Hack_Watcher\\node_modules\\yaeti\\lib\\EventTarget.js\par
+:115:12)\par
+    at W3CWebSocket.onClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Early_Hack_Watc\par
+her\\Hack_Watcher\\node_modules\\websocket\\lib\\W3CWebSocket.js:228:10)\par
+    at WebSocketConnection.<anonymous> (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\03_Earl\par
+y_Hack_Watcher\\Hack_Watcher\\node_modules\\websocket\\lib\\W3CWebSocket.js:201:17)\par
+\cf8     at WebSocketConnection.emit (events.js:321:20)\par
+\cf0     at WebSocketConnection.handleSocketClose (C:\\Users\\MultiEBD\\Desktop\\SOVRYN\\0\par
+3_Early_Hack_Watcher\\Hack_Watcher\\node_modules\\websocket\\lib\\WebSocketConnection\par
+.js:389:14)\par
+\cf8     at TLSSocket.emit (events.js:333:22)\par
+    at net.js:668:12\par
+    at TCP.done (_tls_wrap.js:558:7)\cf0  \{\par
+  code: \cf3 1006\cf0 ,\par
+  reason: \cf1 'Connection dropped by remote peer.'\par
+\cf0\}\par
+\par
+\cf1 MultiEBD@MultiEBD-PC \cf2 MINGW64 \cf3 ~/Desktop/SOVRYN/03_Early_Hack_Watcher/Hack_Watcher\cf4  (master)\par
+\cf0 $\par
+\f0\fs22 -----------------------------------\par
 }
  

@@ -9,9 +9,9 @@ enter to node console:
 $node
 ```
 
-and rund the basicMonitor:
+and rund the Monitor2:
 ```shell
->node baseMonitor
+>node Monitor2
 ```
 
 uncomment only one line address and test it against https://trade.sovryn.app/lend activity
