@@ -55,7 +55,7 @@ class SocketWatch {
       xhr.send();
     this.subscription.on("data", (eVnt) => {
       console.log(eVnt);
-      Mssge = "new Transfer event found to DOC contract at transaction: " + eVnt.transactionHash + "; at the block number: " + eVnt.blockNumber + " with block hash number: " + eVnt.blockHash;
+      Mssge = "new Transfer event found to DOC contract at transaction: " + eVnt.transactionHash + "; at the block number: " + eVnt.blockNumber + ", with block hash number: " + eVnt.blockHash;
       urlSend = this.endpoint.replace('%message', Mssge);
       xhr.open('GET', urlSend);
       xhr.send();
