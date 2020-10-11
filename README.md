@@ -13,7 +13,11 @@ At this stage the code is interacting with a Telegram bot.
 3. Search for one of the bots that can identify your chat_id, like [@get_id_bot](https://t.me/get_id_bot). Write down your Chat_ID.
 4. Go to the file example.env.txt and turn it into ".env" and edit it, replacing the data with your bot TOKEN and CHAT_ID.
 5. Edit moNitor.js comment/uncomment the socket url / contract address for mainnet / testnet, according the network events you like to watch.
-6. Run the moNitor:
+6. Install the dependencies:
+```shell
+>npm install
+```
+7. Run the moNitor:
 ```shell
 >node moNitor
 ```
