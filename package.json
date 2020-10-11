@@ -1,19 +1,20 @@
 {
   "name": "hack_watcher",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "Early hack detection",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node Monitor"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jjmr007/Hack_Watcher.git"
   },
   "keywords": [
-    "prevention\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dhack",
-    "\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[C\u001bprevention",
+    "prevention",
+    "hack",
     "live",
+    "tekegram",
     "monitor"
   ],
   "author": "Julio Moros",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/jjmr007/Hack_Watcher#readme",
   "devDependencies": {
-    "web3": "^1.3.0"
+    "web3": "^1.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.15.2"
   }
 }
