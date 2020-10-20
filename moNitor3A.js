@@ -45,17 +45,17 @@ class SocketWatch {
     );
   }
 
-  findTx() {
+  findTxTrans() {
     require('dotenv').config();
     this.endpoint = this.endpoint.replace('%token', process.env.TOKEN).replace('%chatId', process.env.CHAT_ID);
-    var Mssge = "Finding emitted events...";
+    var Mssge = "Finding emitted Transfer events...";
     console.log(Mssge);
     var urlSend = this.endpoint.replace('%message', Mssge);
       xhr.open('GET', urlSend);
       xhr.send();
     this.subscription.on("data", (eVnt) => {
       console.log(eVnt);
-      Mssge = "new Transfer event found to DOC contract at transaction: " + eVnt.transactionHash + "; at the block number: " + eVnt.blockNumber + ", with block hash number: " + eVnt.blockHash;
+      Mssge = "new TRANSFER event found to DOC contract at transaction: " + eVnt.transactionHash + "; at the block number: " + eVnt.blockNumber + ", with block hash number: " + eVnt.blockHash;
       urlSend = this.endpoint.replace('%message', Mssge);
       xhr.open('GET', urlSend);
       xhr.send();
@@ -70,4 +70,4 @@ let E = "Transfer(address,address,uint256)";
 // let DOC = "0xe700691da7b9851f2f35f8b8182c69c53ccad9db"; // mainnet
 let DOC = "0xcb46c0ddc60d18efeb0e586c17af6ea36452dae0"; // testnet
 SckWatch.serverListen(DOC, E);
-SckWatch.findTx();
+SckWatch.findTxTrans();

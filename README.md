@@ -19,7 +19,7 @@ At this stage the code is interacting with a Telegram bot.
 ```
 7. Run the moNitor:
 ```shell
->node moNitor
+>node Monitor4
 ```
 
-You should start to see the Transfer events of Dolar-On-Chain contract, in both, the console, and your telegram app.
+You should start to see the Transfer and Approval events of Dolar-On-Chain contract, in both, the console, and your telegram app.
